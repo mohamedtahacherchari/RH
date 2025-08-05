@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  @keyframes bounceX {
+    0%, 100% {
+      transform: translateY(0px) translateX(-5px);
+    }
+    50% {
+      transform: translateY(-5px) translateX(5px);
+    }
+  }
+  
+  .marquee {
+    display: flex;
+    width: max-content;
+    animation: scroll 30s linear infinite;
+  }
+  
+  .animate-bounceX {
+    animation: bounceX 3s ease-in-out infinite;
+  }
+  @keyframes bounceX {
+    0%, 100% {
+      transform: translateX(-5px) translateY(0px);
+    }
+    50% {
+      transform: translateX(5px) translateY(-5px);
+    }
+  }
+  
+  .animate-bounceX {
+    animation: bounceX 3s ease-in-out infinite;
+  }  
+  
