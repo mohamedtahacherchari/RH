@@ -1,7 +1,6 @@
 export {};
 const User = require('../models/User');
 const Devis = require('../models/Devis');
-
 const AuthCode = require('../models/AuthCode');
 const transporter = require('../utils/mailer');
 const { generateCode } = require('../utils/codeGenerator');
